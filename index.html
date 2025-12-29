@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gayatri Jewellery - Timeless Elegance</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .font-sans {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .nav-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .scroll-shadow {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .product-card {
+      transition: all 0.3s ease;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+    .collection-card {
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+    
+    .collection-card:hover img {
+      transform: scale(1.05);
+    }
+    
+    .collection-card img {
+      transition: transform 0.4s ease;
+    }
+    
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      z-index: 100;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+    }
+    
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="h-full font-sans bg-white">
+  <div id="app" class="w-full h-full overflow-auto"><!-- Navigation -->
+   <nav id="navbar" class="nav-sticky bg-white bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex justify-between items-center h-20">
+      <div class="flex-shrink-0">
+       <h1 class="text-3xl font-serif font-bold" id="logo">Gayatri Jewellery</h1>
+      </div>
+      <div class="hidden md:flex space-x-8"><a href="#home" class="hover:opacity-70 transition-opacity">Home</a> <a href="#shop" class="hover:opacity-70 transition-opacity">Shop</a> <a href="#collections" class="hover:opacity-70 transition-opacity">Collections</a> <a href="#about" class="hover:opacity-70 transition-opacity">About</a> <a href="#contact" class="hover:opacity-70 transition-opacity">Contact</a>
+      </div><button id="mobile-menu-btn" class="md:hidden p-2">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100">
+     <div class="px-4 py-4 space-y-3"><a href="#home" class="block hover:opacity-70 transition-opacity">Home</a> <a href="#shop" class="block hover:opacity-70 transition-opacity">Shop</a> <a href="#collections" class="block hover:opacity-70 transition-opacity">Collections</a> <a href="#about" class="block hover:opacity-70 transition-opacity">About</a> <a href="#contact" class="block hover:opacity-70 transition-opacity">Contact</a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div id="hero-bg" class="absolute inset-0"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
+     <div class="mb-8">
+      <svg class="w-20 h-20 mx-auto mb-6 text-white" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="30" r="8" stroke="currentColor" stroke-width="2" fill="none" /> <path d="M50 38 L35 70 M50 38 L65 70" stroke="currentColor" stroke-width="2" fill="none" /> <circle cx="35" cy="70" r="6" stroke="currentColor" stroke-width="2" fill="none" /> <circle cx="65" cy="70" r="6" stroke="currentColor" stroke-width="2" fill="none" /> <path d="M20 70 L35 70 M65 70 L80 70" stroke="currentColor" stroke-width="2" />
+      </svg>
+     </div>
+     <h2 id="hero-title" class="text-5xl md:text-7xl font-serif font-bold mb-6 text-white drop-shadow-lg">Timeless Elegance</h2>
+     <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-white drop-shadow-md">Discover our exquisite collection of handcrafted jewellery</p><button id="hero-cta" class="btn-primary px-10 py-4 text-lg font-medium rounded-full">Shop Now</button>
+    </div>
+   </section><!-- Shop Section -->
+   <section id="shop-intro" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <div class="inline-block mb-6">
+       <svg class="w-16 h-16 mx-auto text-pink-500" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="35" r="12" stroke="currentColor" stroke-width="3" /> <path d="M50 47 L40 70 M50 47 L60 70" stroke="currentColor" stroke-width="3" /> <circle cx="40" cy="70" r="8" fill="currentColor" /> <circle cx="60" cy="70" r="8" fill="currentColor" />
+       </svg>
+      </div>
+      <h2 class="text-5xl font-serif font-bold mb-6">🛍️ Welcome to Gayatri Collections</h2>
+      <p class="text-xl max-w-3xl mx-auto opacity-80 mb-8">Your destination for elegant and affordable traditional imitation jewellery</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <div class="bg-gradient-to-br from-pink-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        💎
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Necklaces</h3>
+       <p class="opacity-70">Stunning traditional and contemporary designs</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        👂
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Earrings</h3>
+       <p class="opacity-70">From jhumkas to chandeliers</p>
+      </div>
+      <div class="bg-gradient-to-br from-amber-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        💍
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Bangles</h3>
+       <p class="opacity-70">Beautiful designs for every occasion</p>
+      </div>
+      <div class="bg-gradient-to-br from-rose-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        👰
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Bridal &amp; Festive Sets</h3>
+       <p class="opacity-70">Complete sets for your special day</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        ✨
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Daily-Wear Jewellery</h3>
+       <p class="opacity-70">Lightweight and comfortable</p>
+      </div>
+      <div class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-lg shadow-lg text-center">
+       <div class="text-4xl mb-4">
+        🎁
+       </div>
+       <h3 class="text-2xl font-serif font-semibold mb-3">Custom Sets</h3>
+       <p class="opacity-70">Mix and match your favorites</p>
+      </div>
+     </div>
+     <div class="bg-gradient-to-r from-pink-100 to-purple-100 p-10 rounded-2xl shadow-xl">
+      <h3 class="text-3xl font-serif font-bold mb-6 text-center">🛒 How to Order</h3>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+       <div class="text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold text-pink-500">
+         1
+        </div>
+        <p class="font-medium">Browse our collections</p>
+       </div>
+       <div class="text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold text-pink-500">
+         2
+        </div>
+        <p class="font-medium">Contact us via WhatsApp</p>
+       </div>
+       <div class="text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold text-pink-500">
+         3
+        </div>
+        <p class="font-medium">Confirm design &amp; price</p>
+       </div>
+       <div class="text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold text-pink-500">
+         4
+        </div>
+        <p class="font-medium">Pay via UPI</p>
+       </div>
+       <div class="text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-2xl font-bold text-pink-500">
+         5
+        </div>
+        <p class="font-medium">Get doorstep delivery</p>
+       </div>
+      </div>
+      <div class="text-center mt-8"><a href="https://wa.me/918341026969" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg"> 💬 Order on WhatsApp </a>
+      </div>
+     </div>
+    </div>
+   </section><!-- Collections Details -->
+   <section class="py-20 bg-gradient-to-br from-purple-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-6">💎 Our Collections</h2>
+     <p class="text-xl text-center mb-16 opacity-80">Jewellery designed to suit every occasion and every woman</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-pink-500">
+       <h3 class="text-2xl font-serif font-bold mb-4">🏛️ Traditional Temple Jewellery</h3>
+       <p class="opacity-70 mb-4">Inspired by ancient South Indian temple art, featuring intricate goddess motifs and traditional designs perfect for weddings and festivals.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-500">
+       <h3 class="text-2xl font-serif font-bold mb-4">👰 Bridal Jewellery Sets</h3>
+       <p class="opacity-70 mb-4">Complete bridal sets including necklaces, earrings, maang tikka, and more. Make your special day unforgettable with our stunning collections.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-amber-500">
+       <h3 class="text-2xl font-serif font-bold mb-4">🌸 Lightweight Daily Wear</h3>
+       <p class="opacity-70 mb-4">Comfortable yet elegant pieces for everyday styling. Perfect for office, college, and casual occasions without compromising on beauty.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-rose-500">
+       <h3 class="text-2xl font-serif font-bold mb-4">🎉 Festive &amp; Party Wear</h3>
+       <p class="opacity-70 mb-4">Shine bright at every celebration with our statement pieces. From Diwali to Durga Puja, we have something for every festival.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500 md:col-span-2">
+       <h3 class="text-2xl font-serif font-bold mb-4">🎁 Custom Combo Sets</h3>
+       <p class="opacity-70 mb-4">Create your perfect set! Mix and match necklaces, earrings, and bangles according to your preference and budget. Contact us for personalized combos.</p>
+      </div>
+     </div>
+     <div class="text-center mt-12 p-8 bg-gradient-to-r from-amber-50 to-pink-50 rounded-xl">
+      <p class="text-lg font-medium">✨ All pieces are carefully selected for quality, durability, and elegance</p>
+     </div>
+    </div>
+   </section><!-- FAQs -->
+   <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-16">❓ Frequently Asked Questions</h2>
+     <div class="space-y-6">
+      <div class="bg-gradient-to-r from-pink-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: Are your products original gold?</h3>
+       <p class="opacity-70">A: No, we specialize in premium imitation jewellery that gives you the look and feel of gold at affordable prices.</p>
+      </div>
+      <div class="bg-gradient-to-r from-purple-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: Do you offer COD (Cash on Delivery)?</h3>
+       <p class="opacity-70">A: Currently, orders are accepted via UPI payment only for secure and faster transactions.</p>
+      </div>
+      <div class="bg-gradient-to-r from-amber-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: Can I order through WhatsApp?</h3>
+       <p class="opacity-70">A: Yes! WhatsApp is our primary order channel. Simply message us at +91 83410 26969 with your requirements.</p>
+      </div>
+      <div class="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: Do you ship all over India?</h3>
+       <p class="opacity-70">A: Yes, we provide safe and affordable shipping across India 🇮🇳</p>
+      </div>
+      <div class="bg-gradient-to-r from-rose-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: How long does delivery take?</h3>
+       <p class="opacity-70">A: Processing takes 1-2 business days, and delivery takes 3-7 business days depending on your location.</p>
+      </div>
+      <div class="bg-gradient-to-r from-indigo-50 to-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-3">Q: What is your return policy?</h3>
+       <p class="opacity-70">A: We accept returns for damaged products or wrong items within 24 hours of delivery. Exchange requests must be raised within 2 days.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Shipping Information -->
+   <section class="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-6">🚚 Shipping Information</h2>
+     <p class="text-xl text-center mb-12 opacity-80">Safe and affordable shipping across India 🇮🇳</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+       <h3 class="text-2xl font-serif font-bold mb-4">📦 Shipping Charges</h3>
+       <ul class="space-y-3 opacity-70">
+        <li>✓ Low and affordable charges</li>
+        <li>✓ Varies based on your location</li>
+        <li>✓ Final cost informed before payment</li>
+        <li>✓ We keep shipping as affordable as possible</li>
+       </ul>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+       <h3 class="text-2xl font-serif font-bold mb-4">⏱️ Delivery Time</h3>
+       <ul class="space-y-3 opacity-70">
+        <li>📋 Processing: 1-2 business days</li>
+        <li>🚛 Delivery: 3-7 business days</li>
+        <li>📍 Depends on location</li>
+        <li>📦 Securely packed to avoid damage</li>
+       </ul>
+      </div>
+     </div>
+     <div class="bg-gradient-to-r from-green-100 to-blue-100 p-8 rounded-xl text-center">
+      <p class="text-lg font-medium">All products are securely packed with bubble wrap and sturdy boxes to ensure they reach you safely!</p>
+     </div>
+    </div>
+   </section><!-- Returns & Exchange Policy -->
+   <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-6">🔄 Returns &amp; Exchange Policy</h2>
+     <p class="text-xl text-center mb-12">We want you to love your purchase ❤️</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-lg border-2 border-green-200">
+       <h3 class="text-2xl font-serif font-bold mb-4 text-green-700">✅ Eligible for Return/Exchange</h3>
+       <ul class="space-y-3">
+        <li class="flex items-start"><span class="text-green-600 mr-2">✓</span> <span>Damaged product (inform within 24 hours)</span></li>
+        <li class="flex items-start"><span class="text-green-600 mr-2">✓</span> <span>Wrong item received</span></li>
+        <li class="flex items-start"><span class="text-green-600 mr-2">✓</span> <span>Manufacturing defects</span></li>
+       </ul>
+      </div>
+      <div class="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl shadow-lg border-2 border-red-200">
+       <h3 class="text-2xl font-serif font-bold mb-4 text-red-700">❌ Not Eligible</h3>
+       <ul class="space-y-3">
+        <li class="flex items-start"><span class="text-red-600 mr-2">✗</span> <span>Used or worn jewellery</span></li>
+        <li class="flex items-start"><span class="text-red-600 mr-2">✗</span> <span>Customized orders</span></li>
+        <li class="flex items-start"><span class="text-red-600 mr-2">✗</span> <span>Damage due to mishandling</span></li>
+       </ul>
+      </div>
+     </div>
+     <div class="mt-8 bg-amber-50 p-6 rounded-xl border-l-4 border-amber-500">
+      <p class="text-lg font-medium">📦 Exchange requests must be raised within 2 days of delivery</p>
+      <p class="mt-2 opacity-70">Contact us immediately via WhatsApp if you receive a damaged or wrong product</p>
+     </div>
+    </div>
+   </section><!-- Privacy Policy -->
+   <section class="py-20 bg-gradient-to-br from-purple-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-6">🔐 Privacy Policy</h2>
+     <p class="text-xl text-center mb-12">Your privacy is important to us</p>
+     <div class="bg-white p-8 rounded-xl shadow-lg">
+      <h3 class="text-2xl font-serif font-bold mb-6">We assure that:</h3>
+      <ul class="space-y-4">
+       <li class="flex items-start"><span class="text-2xl mr-3">🔒</span>
+        <div>
+         <p class="font-semibold">Personal details are kept confidential</p>
+         <p class="opacity-70">Your name, address, and phone number are never shared with anyone</p>
+        </div></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">📋</span>
+        <div>
+         <p class="font-semibold">Information used only for order processing</p>
+         <p class="opacity-70">We collect data solely to deliver your orders and provide customer support</p>
+        </div></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">🚫</span>
+        <div>
+         <p class="font-semibold">We do not share data with third parties</p>
+         <p class="opacity-70">Your information stays with us and is never sold or shared</p>
+        </div></li>
+       <li class="flex items-start"><span class="text-2xl mr-3">💳</span>
+        <div>
+         <p class="font-semibold">Payment details handled securely via UPI</p>
+         <p class="opacity-70">All transactions are processed through secure UPI payment gateway</p>
+        </div></li>
+      </ul>
+      <div class="mt-8 p-4 bg-purple-50 rounded-lg">
+       <p class="text-center font-medium">By using our website and services, you agree to this privacy policy.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Customer Care -->
+   <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-5xl font-serif font-bold text-center mb-6">📞 Customer Care</h2>
+     <p class="text-xl text-center mb-12">We are always happy to assist you</p>
+     <div class="bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-xl shadow-lg mb-8">
+      <h3 class="text-2xl font-serif font-bold mb-4 text-center">Customer Support Hours</h3>
+      <p class="text-center text-xl mb-4">🕘 Monday – Saturday: 10:00 AM to 8:00 PM</p>
+      <p class="text-center opacity-70">Sunday closed for weekly rest</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"><a href="https://wa.me/918341026969" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white p-6 rounded-xl shadow-lg hover:bg-green-600 transition-all text-center">
+       <div class="text-3xl mb-2">
+        💬
+       </div><h3 class="text-xl font-bold mb-2">WhatsApp</h3><p>+91 83410 26969</p></a> <a href="tel:+918341026969" class="bg-blue-500 text-white p-6 rounded-xl shadow-lg hover:bg-blue-600 transition-all text-center">
+       <div class="text-3xl mb-2">
+        📱
+       </div><h3 class="text-xl font-bold mb-2">Phone</h3><p>+91 83410 26969</p></a>
+     </div>
+     <div class="bg-white border-2 border-gray-200 p-8 rounded-xl">
+      <h3 class="text-2xl font-serif font-bold mb-6 text-center">Contact us for:</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Order inquiries</span>
+       </div>
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Product details</span>
+       </div>
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Shipping updates</span>
+       </div>
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Returns &amp; exchanges</span>
+       </div>
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Custom orders</span>
+       </div>
+       <div class="flex items-center"><span class="text-pink-500 mr-3">✓</span> <span>Bulk inquiries</span>
+       </div>
+      </div>
+     </div>
+     <div class="mt-8 bg-gradient-to-r from-amber-50 to-pink-50 p-6 rounded-xl">
+      <h3 class="text-xl font-semibold mb-3 text-center">📧 Email Support</h3>
+      <p class="text-center"><a href="mailto:sivagayatricollections@gmail.com" class="hover:underline">sivagayatricollections@gmail.com</a></p>
+      <p class="text-center text-sm opacity-70 mt-2">Response time: Within 24 hours</p>
+     </div>
+    </div>
+   </section><!-- Contact Form -->
+   <section class="py-20 bg-gradient-to-br from-pink-50 to-white">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-4xl font-serif font-bold text-center mb-6">💌 Send Us a Message</h2>
+     <p class="text-center mb-12 opacity-80">Have a question? Fill out the form below and we'll get back to you soon!</p>
+     <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg">
+      <div class="mb-6"><label for="contact-name" class="block text-sm font-medium mb-2">Your Name *</label> <input type="text" id="contact-name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Enter your name">
+      </div>
+      <div class="mb-6"><label for="contact-email" class="block text-sm font-medium mb-2">Email Address *</label> <input type="email" id="contact-email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="your@email.com">
+      </div>
+      <div class="mb-6"><label for="contact-phone" class="block text-sm font-medium mb-2">Phone Number *</label> <input type="tel" id="contact-phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="+91 XXXXX XXXXX">
+      </div>
+      <div class="mb-6"><label for="contact-type" class="block text-sm font-medium mb-2">Inquiry Type *</label> <select id="contact-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"> <option value="">Select inquiry type</option> <option value="order">Order Inquiry</option> <option value="product">Product Details</option> <option value="shipping">Shipping Question</option> <option value="return">Returns/Exchange</option> <option value="custom">Custom Order</option> <option value="bulk">Bulk Order</option> <option value="other">Other</option> </select>
+      </div>
+      <div class="mb-6"><label for="contact-message" class="block text-sm font-medium mb-2">Your Message *</label> <textarea id="contact-message" required rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Tell us how we can help you..."></textarea>
+      </div><button type="submit" id="contact-submit-btn" class="w-full bg-pink-500 text-white py-4 rounded-lg font-semibold hover:bg-pink-600 transition-all transform hover:scale-105 shadow-lg"> Send Message </button>
+      <div id="contact-form-message" class="mt-4 text-center"></div>
+     </form>
+    </div>
+   </section><!-- Featured Collections -->
+   <section id="collections" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 id="collections-title" class="text-4xl md:text-5xl font-serif font-bold text-center mb-16">Featured Collections</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="collection-card rounded-lg overflow-hidden shadow-lg">
+       <div class="aspect-square bg-gradient-to-br from-amber-50 to-yellow-50 flex items-center justify-center relative overflow-hidden"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&amp;h=600&amp;fit=crop" alt="Gold Chains Collection" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-32 h-32 text-amber-600" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="25" r="8" stroke="currentColor" stroke-width="2" /> <path d="M50 33 L50 75" stroke="currentColor" stroke-width="3" /> <circle cx="50" cy="45" r="6" stroke="currentColor" stroke-width="2" /> <circle cx="50" cy="60" r="6" stroke="currentColor" stroke-width="2" /> <circle cx="50" cy="75" r="8" stroke="currentColor" stroke-width="2" />
+         </svg>
+        </div>
+        <div class="absolute bottom-4 right-4 text-white text-xs bg-black bg-opacity-30 px-3 py-1 rounded-full">
+         Gayatri Collections
+        </div>
+       </div>
+       <div class="p-6 bg-white">
+        <h3 class="text-2xl font-serif font-semibold mb-2">1 Gram Gold Chains</h3>
+        <p class="opacity-70 mb-4">Lightweight &amp; affordable elegance</p><button class="font-medium hover:opacity-70 transition-opacity">Explore →</button>
+       </div>
+      </div>
+      <div class="collection-card rounded-lg overflow-hidden shadow-lg">
+       <div class="aspect-square bg-gradient-to-br from-rose-50 to-pink-50 flex items-center justify-center relative overflow-hidden"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&amp;h=600&amp;fit=crop" alt="Gold Bangles Collection" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-32 h-32 text-rose-600" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="5" /> <circle cx="50" cy="50" r="20" stroke="currentColor" stroke-width="3" /> <path d="M35 40 L40 50 L35 60" stroke="currentColor" stroke-width="2" /> <path d="M65 40 L60 50 L65 60" stroke="currentColor" stroke-width="2" />
+         </svg>
+        </div>
+        <div class="absolute bottom-4 right-4 text-white text-xs bg-black bg-opacity-30 px-3 py-1 rounded-full">
+         Gayatri Collections
+        </div>
+       </div>
+       <div class="p-6 bg-white">
+        <h3 class="text-2xl font-serif font-semibold mb-2">Designer Bangles</h3>
+        <p class="opacity-70 mb-4">Stunning traditional &amp; modern designs</p><button class="font-medium hover:opacity-70 transition-opacity">Explore →</button>
+       </div>
+      </div>
+      <div class="collection-card rounded-lg overflow-hidden shadow-lg">
+       <div class="aspect-square bg-gradient-to-br from-purple-50 to-indigo-50 flex items-center justify-center relative overflow-hidden"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&amp;h=600&amp;fit=crop" alt="Necklace Sets Collection" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-32 h-32 text-purple-600" viewbox="0 0 100 100" fill="none"><path d="M30 30 Q50 15 70 30" stroke="currentColor" stroke-width="3" fill="none" /> <circle cx="40" cy="40" r="6" fill="currentColor" /> <circle cx="50" cy="35" r="8" fill="currentColor" /> <circle cx="60" cy="40" r="6" fill="currentColor" /> <path d="M30 30 L30 50 Q50 70 70 50 L70 30" stroke="currentColor" stroke-width="2" fill="none" />
+         </svg>
+        </div>
+        <div class="absolute bottom-4 right-4 text-white text-xs bg-black bg-opacity-30 px-3 py-1 rounded-full">
+         Siva Gayatri Collections
+        </div>
+       </div>
+       <div class="p-6 bg-white">
+        <h3 class="text-2xl font-serif font-semibold mb-2">Necklace Sets</h3>
+        <p class="opacity-70 mb-4">Complete bridal &amp; party wear sets</p><button class="font-medium hover:opacity-70 transition-opacity">Explore →</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Best Sellers -->
+   <section id="shop" class="py-20 bg-gradient-to-br from-pink-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 id="bestsellers-title" class="text-4xl md:text-5xl font-serif font-bold text-center mb-16">Best Sellers</h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+       <div class="aspect-square bg-gradient-to-br from-amber-50 to-yellow-50 flex items-center justify-center p-4 relative overflow-hidden"><img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=400&amp;h=400&amp;fit=crop" alt="Gold Chain" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-24 h-24 text-amber-600" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="25" r="8" stroke="currentColor" stroke-width="2.5" /> <path d="M50 33 L50 75" stroke="currentColor" stroke-width="3" /> <circle cx="50" cy="45" r="5" stroke="currentColor" stroke-width="2" /> <circle cx="50" cy="60" r="5" stroke="currentColor" stroke-width="2" /> <circle cx="50" cy="75" r="8" stroke="currentColor" stroke-width="2.5" />
+         </svg>
+        </div>
+        <div class="absolute top-2 right-2 text-white text-xs bg-black bg-opacity-40 px-2 py-1 rounded">
+         Siva Gayatri
+        </div>
+       </div>
+       <div class="p-6">
+        <h3 class="font-serif text-xl font-semibold mb-2">1 Gram Gold Chain</h3>
+        <p class="text-2xl font-bold mb-4">₹1,299</p><button class="w-full py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Quick View</button>
+       </div>
+      </div>
+      <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+       <div class="aspect-square bg-gradient-to-br from-rose-50 to-pink-50 flex items-center justify-center p-4 relative overflow-hidden"><img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&amp;h=400&amp;fit=crop" alt="Gold Bangles" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-24 h-24 text-rose-600" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="4" /> <circle cx="50" cy="50" r="18" stroke="currentColor" stroke-width="2" /> <circle cx="40" cy="40" r="3" fill="currentColor" /> <circle cx="60" cy="40" r="3" fill="currentColor" /> <circle cx="50" cy="60" r="3" fill="currentColor" />
+         </svg>
+        </div>
+        <div class="absolute top-2 right-2 text-white text-xs bg-black bg-opacity-40 px-2 py-1 rounded">
+         Siva Gayatri
+        </div>
+       </div>
+       <div class="p-6">
+        <h3 class="font-serif text-xl font-semibold mb-2">Designer Bangles Set</h3>
+        <p class="text-2xl font-bold mb-4">₹1,799</p><button class="w-full py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Quick View</button>
+       </div>
+      </div>
+      <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+       <div class="aspect-square bg-gradient-to-br from-purple-50 to-indigo-50 flex items-center justify-center p-4 relative overflow-hidden"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&amp;h=400&amp;fit=crop" alt="Necklace Set" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-24 h-24 text-purple-600" viewbox="0 0 100 100" fill="none"><path d="M30 35 Q50 20 70 35" stroke="currentColor" stroke-width="3" fill="none" /> <circle cx="40" cy="45" r="6" fill="currentColor" /> <circle cx="50" cy="40" r="8" fill="currentColor" /> <circle cx="60" cy="45" r="6" fill="currentColor" /> <path d="M30 35 L30 55 Q50 70 70 55 L70 35" stroke="currentColor" stroke-width="2.5" fill="none" />
+         </svg>
+        </div>
+        <div class="absolute top-2 right-2 text-white text-xs bg-black bg-opacity-40 px-2 py-1 rounded">
+         Siva Gayatri
+        </div>
+       </div>
+       <div class="p-6">
+        <h3 class="font-serif text-xl font-semibold mb-2">Bridal Necklace Set</h3>
+        <p class="text-2xl font-bold mb-4">₹1,999</p><button class="w-full py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Quick View</button>
+       </div>
+      </div>
+      <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+       <div class="aspect-square bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center p-4 relative overflow-hidden"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&amp;h=400&amp;fit=crop" alt="Earrings" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 flex items-center justify-center" style="display:none;">
+         <svg class="w-24 h-24 text-amber-700" viewbox="0 0 100 100" fill="none"><circle cx="35" cy="50" r="12" stroke="currentColor" stroke-width="2.5" /> <circle cx="65" cy="50" r="12" stroke="currentColor" stroke-width="2.5" /> <circle cx="35" cy="50" r="5" fill="currentColor" /> <circle cx="65" cy="50" r="5" fill="currentColor" /> <path d="M35 35 L35 30" stroke="currentColor" stroke-width="2" /> <path d="M65 35 L65 30" stroke="currentColor" stroke-width="2" />
+         </svg>
+        </div>
+        <div class="absolute top-2 right-2 text-white text-xs bg-black bg-opacity-40 px-2 py-1 rounded">
+         Siva Gayatri
+        </div>
+       </div>
+       <div class="p-6">
+        <h3 class="font-serif text-xl font-semibold mb-2">Gold Jhumka Earrings</h3>
+        <p class="text-2xl font-bold mb-4">₹899</p><button class="w-full py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Quick View</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Customer Reviews -->
+   <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 id="reviews-title" class="text-4xl md:text-5xl font-serif font-bold text-center mb-16">What Our Customers Say</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gradient-to-br from-pink-50 to-white p-8 rounded-lg shadow-lg">
+       <div class="flex mb-4">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+       </div>
+       <p class="mb-6 italic">"Absolutely stunning pieces! The craftsmanship is exceptional and the designs are timeless. I've received so many compliments on my necklace."</p>
+       <p class="font-semibold">Priya Sharma</p>
+       <p class="text-sm opacity-70">Mumbai</p>
+      </div>
+      <div class="bg-gradient-to-br from-amber-50 to-white p-8 rounded-lg shadow-lg">
+       <div class="flex mb-4">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+       </div>
+       <p class="mb-6 italic">"The best jewellery shopping experience! The quality is outstanding and the customer service is excellent. Highly recommended!"</p>
+       <p class="font-semibold">Ananya Reddy</p>
+       <p class="text-sm opacity-70">Bangalore</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-lg shadow-lg">
+       <div class="flex mb-4">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+       </div>
+       <p class="mb-6 italic">"I bought earrings for my wedding and they were perfect! Beautiful design, great price, and they made my special day even more memorable."</p>
+       <p class="font-semibold">Lakshmi Iyer</p>
+       <p class="text-sm opacity-70">Chennai</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Newsletter -->
+   <section class="py-20 bg-gradient-to-r from-pink-50 via-purple-50 to-amber-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+     <h2 id="newsletter-title" class="text-4xl md:text-5xl font-serif font-bold mb-6">Stay Connected</h2>
+     <p id="newsletter-subtitle" class="text-xl mb-10 opacity-80">Get exclusive offers &amp; updates delivered to your inbox</p>
+     <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"><input type="email" id="newsletter-email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-full border-2 border-gray-200 focus:outline-none focus:border-pink-300" required> <button type="submit" class="px-8 py-4 rounded-full font-medium whitespace-nowrap">Subscribe</button>
+     </form>
+     <p id="newsletter-message" class="mt-4 text-sm opacity-70"></p>
+    </div>
+   </section><!-- Instagram Feed -->
+   <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-12">
+      <h2 id="instagram-title" class="text-4xl md:text-5xl font-serif font-bold mb-4">Follow Us on Instagram</h2><a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="text-xl opacity-80 hover:opacity-100 transition-opacity">@gayathrycollections</a>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4"><a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-pink-200 to-pink-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="3" /> <circle cx="50" cy="50" r="15" fill="currentColor" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-amber-200 to-amber-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><path d="M50 20 L60 40 L80 45 L65 60 L68 80 L50 70 L32 80 L35 60 L20 45 L40 40 Z" stroke="currentColor" stroke-width="3" fill="currentColor" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-purple-200 to-purple-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><circle cx="35" cy="50" r="12" stroke="currentColor" stroke-width="3" /> <circle cx="65" cy="50" r="12" stroke="currentColor" stroke-width="3" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-blue-200 to-blue-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><rect x="35" y="40" width="30" height="20" rx="3" stroke="currentColor" stroke-width="3" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-rose-200 to-rose-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="40" r="15" stroke="currentColor" stroke-width="3" /> <path d="M50 55 L50 75" stroke="currentColor" stroke-width="3" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="20" stroke="currentColor" stroke-width="3" /> <circle cx="50" cy="50" r="8" fill="currentColor" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-indigo-200 to-indigo-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><rect x="30" y="30" width="40" height="40" rx="5" stroke="currentColor" stroke-width="3" />
+       </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="aspect-square bg-gradient-to-br from-teal-200 to-teal-100 rounded-lg flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer">
+       <svg class="w-16 h-16" viewbox="0 0 100 100" fill="none"><path d="M35 50 L50 35 L65 50 L50 65 Z" stroke="currentColor" stroke-width="3" fill="currentColor" />
+       </svg></a>
+     </div>
+    </div>
+   </section><!-- About & Contact -->
+   <section id="about" class="py-20 bg-gradient-to-br from-pink-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+       <h2 class="text-4xl font-serif font-bold mb-6">About Siva Gayatri Collections</h2>
+       <p class="text-lg mb-6 opacity-80">We are dedicated to bringing you the finest handcrafted jewellery that combines traditional artistry with contemporary design. Each piece is carefully curated to add elegance and sophistication to your collection.</p>
+       <p class="text-lg opacity-80">With years of expertise in the jewellery industry, we pride ourselves on quality, authenticity, and exceptional customer service.</p>
+      </div>
+      <div id="contact">
+       <h2 class="text-4xl font-serif font-bold mb-6">Get in Touch</h2>
+       <div class="space-y-4">
+        <div class="flex items-start">
+         <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+         </svg><a href="tel:+918341026969" class="text-lg hover:opacity-70 transition-opacity">+91 83410 26969</a>
+        </div>
+        <div class="flex items-start">
+         <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+         </svg><a href="mailto:sivagayatricollections@gmail.com" class="text-lg hover:opacity-70 transition-opacity break-all">sivagayatricollections@gmail.com</a>
+        </div>
+        <div class="flex items-start">
+         <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+         </svg><a href="https://maps.app.goo.gl/KpqKGKjWeix63NKL8" target="_blank" rel="noopener noreferrer" class="text-lg hover:opacity-70 transition-opacity">View on Google Maps →</a>
+        </div>
+        <div class="pt-4">
+         <p class="font-semibold mb-2">UPI Payment:</p>
+         <p class="text-lg">8341026969@axl</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-12 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div>
+       <h3 class="font-serif text-2xl font-bold mb-4">Siva Gayatri Collections</h3>
+       <p class="opacity-70">Siva Gayatri Collections<br>
+        Sole Proprietorship</p>
+      </div>
+      <div>
+       <h4 class="font-semibold mb-4">Quick Links</h4>
+       <ul class="space-y-2 opacity-70">
+        <li><a href="#home" class="hover:opacity-100 transition-opacity">Home</a></li>
+        <li><a href="#shop" class="hover:opacity-100 transition-opacity">Shop</a></li>
+        <li><a href="#collections" class="hover:opacity-100 transition-opacity">Collections</a></li>
+        <li><a href="#about" class="hover:opacity-100 transition-opacity">About</a></li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="font-semibold mb-4">Customer Care</h4>
+       <ul class="space-y-2 opacity-70">
+        <li><a href="#" class="hover:opacity-100 transition-opacity">Privacy Policy</a></li>
+        <li><a href="#" class="hover:opacity-100 transition-opacity">Returns &amp; Exchange</a></li>
+        <li><a href="#" class="hover:opacity-100 transition-opacity">FAQs</a></li>
+        <li><a href="#" class="hover:opacity-100 transition-opacity">Shipping Info</a></li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="font-semibold mb-4">Follow Us</h4>
+       <div class="flex space-x-4"><a href="#" class="hover:opacity-70 transition-opacity" aria-label="Facebook">
+         <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+         </svg></a> <a href="https://www.instagram.com/gayathrycollections/" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" aria-label="Instagram">
+         <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+         </svg></a> <a href="#" class="hover:opacity-70 transition-opacity" aria-label="Twitter">
+         <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+         </svg></a>
+       </div>
+      </div>
+     </div>
+     <div class="border-t border-gray-200 pt-8 text-center opacity-70">
+      <p>© 2025 Siva Gayatri Collections. All rights reserved.</p>
+     </div>
+    </div>
+   </footer><!-- WhatsApp Float Button --> <a href="https://wa.me/918341026969" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg></a>
+  </div>
+  <script>
+    const defaultConfig = {
+      hero_title: "Timeless Elegance",
+      hero_subtitle: "Discover our exquisite collection of handcrafted jewellery",
+      hero_cta: "Shop Now",
+      collections_title: "Featured Collections",
+      bestsellers_title: "Best Sellers",
+      reviews_title: "What Our Customers Say",
+      newsletter_title: "Stay Connected",
+      newsletter_subtitle: "Get exclusive offers & updates delivered to your inbox",
+      instagram_title: "Follow Us on Instagram",
+      background_color: "#fdf2f8",
+      surface_color: "#ffffff",
+      text_color: "#1f2937",
+      primary_action_color: "#ec4899",
+      secondary_action_color: "#a855f7",
+      font_family: "Poppins",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const heroTitle = document.getElementById('hero-title');
+      const heroSubtitle = document.getElementById('hero-subtitle');
+      const heroCta = document.getElementById('hero-cta');
+      const collectionsTitle = document.getElementById('collections-title');
+      const bestsellersTitle = document.getElementById('bestsellers-title');
+      const reviewsTitle = document.getElementById('reviews-title');
+      const newsletterTitle = document.getElementById('newsletter-title');
+      const newsletterSubtitle = document.getElementById('newsletter-subtitle');
+      const instagramTitle = document.getElementById('instagram-title');
+      const logo = document.getElementById('logo');
+      
+      if (heroTitle) heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+      if (heroSubtitle) heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      if (heroCta) heroCta.textContent = config.hero_cta || defaultConfig.hero_cta;
+      if (collectionsTitle) collectionsTitle.textContent = config.collections_title || defaultConfig.collections_title;
+      if (bestsellersTitle) bestsellersTitle.textContent = config.bestsellers_title || defaultConfig.bestsellers_title;
+      if (reviewsTitle) reviewsTitle.textContent = config.reviews_title || defaultConfig.reviews_title;
+      if (newsletterTitle) newsletterTitle.textContent = config.newsletter_title || defaultConfig.newsletter_title;
+      if (newsletterSubtitle) newsletterSubtitle.textContent = config.newsletter_subtitle || defaultConfig.newsletter_subtitle;
+      if (instagramTitle) instagramTitle.textContent = config.instagram_title || defaultConfig.instagram_title;
+      
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+      
+      document.body.style.color = textColor;
+      if (logo) logo.style.color = textColor;
+      
+      document.querySelectorAll('section').forEach(section => {
+        if (section.classList.contains('bg-white')) {
+          section.style.backgroundColor = surfaceColor;
+        }
+      });
+      
+      document.querySelectorAll('.bg-white').forEach(el => {
+        el.style.backgroundColor = surfaceColor;
+      });
+      
+      document.querySelectorAll('.btn-primary').forEach(btn => {
+        btn.style.backgroundColor = primaryActionColor;
+        btn.style.color = surfaceColor;
+      });
+      
+      document.querySelectorAll('.product-card button').forEach(btn => {
+        btn.style.backgroundColor = primaryActionColor;
+        btn.style.color = surfaceColor;
+      });
+      
+      document.querySelectorAll('a').forEach(link => {
+        link.style.color = textColor;
+      });
+      
+      document.querySelectorAll('.collection-card button').forEach(btn => {
+        btn.style.color = secondaryActionColor;
+      });
+      
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'Arial, sans-serif';
+      const baseSize = config.font_size || defaultConfig.font_size;
+      
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.body.style.fontSize = `${baseSize}px`;
+      
+      document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => {
+        heading.style.fontFamily = `'Cormorant Garamond', ${customFont}, serif`;
+      });
+      
+      document.querySelectorAll('h1').forEach(h => h.style.fontSize = `${baseSize * 2}px`);
+      document.querySelectorAll('h2').forEach(h => h.style.fontSize = `${baseSize * 1.75}px`);
+      document.querySelectorAll('h3').forEach(h => h.style.fontSize = `${baseSize * 1.5}px`);
+      document.querySelectorAll('p').forEach(p => p.style.fontSize = `${baseSize}px`);
+      document.querySelectorAll('button').forEach(btn => btn.style.fontSize = `${baseSize}px`);
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ primary_action_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ secondary_action_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["hero_cta", config.hero_cta || defaultConfig.hero_cta],
+        ["collections_title", config.collections_title || defaultConfig.collections_title],
+        ["bestsellers_title", config.bestsellers_title || defaultConfig.bestsellers_title],
+        ["reviews_title", config.reviews_title || defaultConfig.reviews_title],
+        ["newsletter_title", config.newsletter_title || defaultConfig.newsletter_title],
+        ["newsletter_subtitle", config.newsletter_subtitle || defaultConfig.newsletter_subtitle],
+        ["instagram_title", config.instagram_title || defaultConfig.instagram_title]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // Background slideshow
+    const heroImages = [
+      'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1920&h=1080&fit=crop',
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&h=1080&fit=crop',
+      'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1920&h=1080&fit=crop',
+      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1920&h=1080&fit=crop',
+      'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1920&h=1080&fit=crop'
+    ];
+    
+    let currentImageIndex = 0;
+    const heroBg = document.getElementById('hero-bg');
+    
+    function setBackgroundImage(index) {
+      heroBg.style.backgroundImage = `url(${heroImages[index]})`;
+      heroBg.style.backgroundSize = 'cover';
+      heroBg.style.backgroundPosition = 'center';
+      heroBg.style.transition = 'opacity 1.5s ease-in-out';
+    }
+    
+    setBackgroundImage(0);
+    
+    setInterval(() => {
+      heroBg.style.opacity = '0';
+      setTimeout(() => {
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+        setBackgroundImage(currentImageIndex);
+        heroBg.style.opacity = '1';
+      }, 750);
+    }, 5000);
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        navbar.classList.add('scroll-shadow');
+      } else {
+        navbar.classList.remove('scroll-shadow');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Newsletter form
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterMessage = document.getElementById('newsletter-message');
+    
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = document.getElementById('newsletter-email');
+      newsletterMessage.textContent = 'Thank you for subscribing! Check your email for exclusive offers.';
+      newsletterMessage.style.color = window.elementSdk ? (window.elementSdk.config.primary_action_color || defaultConfig.primary_action_color) : defaultConfig.primary_action_color;
+      emailInput.value = '';
+      
+      setTimeout(() => {
+        newsletterMessage.textContent = '';
+      }, 5000);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+
+    // Data SDK for contact form
+    const dataHandler = {
+      onDataChanged(data) {
+        // Store data locally for potential future display
+        console.log('Contact inquiries:', data.length);
+      }
+    };
+
+    async function initializeDataSDK() {
+      if (window.dataSdk) {
+        const initResult = await window.dataSdk.init(dataHandler);
+        if (!initResult.isOk) {
+          console.error('Failed to initialize data SDK');
+        }
+      }
+    }
+
+    initializeDataSDK();
+
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
+    const contactSubmitBtn = document.getElementById('contact-submit-btn');
+    const contactFormMessage = document.getElementById('contact-form-message');
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const phone = document.getElementById('contact-phone').value;
+      const type = document.getElementById('contact-type').value;
+      const message = document.getElementById('contact-message').value;
+
+      // Show loading state
+      contactSubmitBtn.disabled = true;
+      contactSubmitBtn.textContent = 'Sending...';
+      contactFormMessage.textContent = '';
+
+      if (window.dataSdk) {
+        const result = await window.dataSdk.create({
+          name: name,
+          email: email,
+          phone: phone,
+          type: type,
+          message: message,
+          timestamp: new Date().toISOString()
+        });
+
+        if (result.isOk) {
+          contactFormMessage.innerHTML = '✓ Message sent successfully! We\'ll get back to you within 24 hours.';
+          contactFormMessage.style.color = '#10b981';
+          contactForm.reset();
+        } else {
+          contactFormMessage.innerHTML = '✗ Failed to send message. Please try WhatsApp instead.';
+          contactFormMessage.style.color = '#ef4444';
+        }
+      } else {
+        contactFormMessage.innerHTML = '✗ Unable to send message. Please contact us via WhatsApp.';
+        contactFormMessage.style.color = '#ef4444';
+      }
+
+      // Reset button state
+      contactSubmitBtn.disabled = false;
+      contactSubmitBtn.textContent = 'Send Message';
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b5a385595fdba26',t:'MTc2NzAyMDk4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
